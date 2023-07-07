@@ -3,6 +3,7 @@ import Tag from './components/tag/Tag.js';
 import Header from './components/header/Header';
 import Banner from './components/banner/Banner';
 import Gallery from './components/gallery/Gallery';
+import Footer from './components/footer/Footer';
 import './App.css';
 import {useEffect, useState} from "react";
 import Thumbnail from "./components/thumbnail/Thumbnail";
@@ -22,10 +23,13 @@ function App() {
 
     return (
         <div className="App">
-            <Header />
-            <Banner />
-            <Gallery />
-            <Thumbnail />
+            <div className='container'>
+                <Header />
+                <Banner />
+                <Gallery />
+                <Thumbnail />
+            </div>
+                <Footer />
             {/* <div className={"thumbnails"}>
                 {appartements.map(appartement => <Thumbnail
                     title={appartement.title}
