@@ -1,9 +1,13 @@
 import './gallery.css'
+import Thumbnail  from "../thumbnail/Thumbnail";
 
-export default function Gallery() {
+export default function Gallery({appartements}) {
 	return (
 		<div className='gallery'>
-            <p>hi</p>
+                {appartements.map(appartement => <Thumbnail
+                    title={appartement.title}
+                    image={appartement.cover}
+                />)}
 		</div>
 	)
 }

@@ -26,16 +26,11 @@ function App() {
             <div className='container'>
                 <Header />
                 <Banner />
-                <Gallery />
-                <Thumbnail />
+                <Gallery
+                    appartements={appartements}
+                />
             </div>
                 <Footer />
-            {/* <div className={"thumbnails"}>
-                {appartements.map(appartement => <Thumbnail
-                    title={appartement.title}
-                    image={appartement.cover}
-                />)}
-            </div> */}
 
             {/* 
             
@@ -43,6 +38,11 @@ function App() {
             - Dans thumbnail: récupérer les photos directement dans le dossier du composant
             - Mettre le style css pour chaque thumbnail
             - Rappeler ensuite thumbnail dans gallery et faire le css de la gallery en flex ou grid
+
+            <Route path="/" component=Home />
+            <Route path="/:id" component=Appartment />
+            <Route path="/about" component=About />
+            <Route path="*" component=404 />
 
             
             */}
