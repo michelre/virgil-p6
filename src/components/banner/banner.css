@@ -1,0 +1,20 @@
+.banner{
+    position: relative;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/fond.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 223px;
+    padding: 20px;
+    margin: 43px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+p{
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+}
