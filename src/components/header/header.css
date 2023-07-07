@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    border-radius: 80px;
+}
+
+.lienNavbar{
+    display: flex;
+    gap: 50px;
+}
+
+.lienNavbar li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #FF6060;
+}
+
+.lienNavbar li a:hover{
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline solid #FF6060;
+}
+
+.lienNavbar li{
+    list-style-type: none;
+}
+

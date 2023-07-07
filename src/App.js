@@ -1,8 +1,11 @@
 import logo from './logo.svg';
-import Tag from './components/Tag.js'
+import Tag from './components/tag/Tag.js';
+import Header from './components/header/Header';
+import Banner from './components/banner/Banner';
+import Gallery from './components/gallery/Gallery';
 import './App.css';
 import {useEffect, useState} from "react";
-import Thumbnail from "./components/Thumbnail";
+import Thumbnail from "./components/thumbnail/Thumbnail";
 
 function App() {
 
@@ -19,36 +22,29 @@ function App() {
 
     return (
         <div className="App">
-            <div className={"thumbnails"}>
+            <Header />
+            <Banner />
+            <Gallery />
+            <Thumbnail />
+            {/* <div className={"thumbnails"}>
                 {appartements.map(appartement => <Thumbnail
                     title={appartement.title}
                     image={appartement.cover}
                 />)}
-            </div>
+            </div> */}
+
+            {/* 
+            
+            IDEE : 
+            - Dans thumbnail: récupérer les photos directement dans le dossier du composant
+            - Mettre le style css pour chaque thumbnail
+            - Rappeler ensuite thumbnail dans gallery et faire le css de la gallery en flex ou grid
+
+            
+            */}
 
 
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload. dskdksdkskds
-                </p>
-                <div className={'tags'}>
-                    <Tag
-                        name="Cozy"
-                    />
-                    <Tag
-                        name="Paris 10"
-                    />
-                </div>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+
         </div>
     );
 }
