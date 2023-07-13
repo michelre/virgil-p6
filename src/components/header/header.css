@@ -1,29 +1,20 @@
-.header{
+header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 68px;
-    border-radius: 80px;
+    padding-block: 40px;
+    padding-inline: 100px;
+    padding: 50px 10% 0px 10%;
 }
 
-.lienNavbar{
-    display: flex;
-    gap: 50px;
+header nav a{
+    color: rgba(255, 96, 96, 1);
 }
 
-.lienNavbar li a{
+header nav a:first-child{
+    margin-right: 57px;
+}
+
+.innactif {
     text-decoration: none;
-    font-size: 24px;
-    color: #FF6060;
 }
-
-.lienNavbar li a:hover{
-    transition: all 0.2s ease-in-out;
-    text-decoration: underline solid #FF6060;
-}
-
-.lienNavbar li{
-    list-style-type: none;
-}
-

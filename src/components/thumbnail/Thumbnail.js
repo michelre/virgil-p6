@@ -1,6 +1,15 @@
+/*
+
+<Link to={props.id} tag=div/> // Création du lien
+
+ */
+import './thumbnail.css'
+
 const Thumbnail = (props) => {
     return <div  className="thumbnail" style={{background: `url(${props.image}) center`}}>
-        <p>{props.title}</p>
+        <div className="background">
+            <p>{props.title}</p>
+        </div>
     </div>
 }
 
