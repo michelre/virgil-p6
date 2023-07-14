@@ -1,0 +1,10 @@
+.appartement-header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px){
+ .appartement-header {
+    grid-template-columns: 1fr 1fr;
+}
+}

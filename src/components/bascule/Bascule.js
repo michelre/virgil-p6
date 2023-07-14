@@ -3,10 +3,10 @@ import { useState } from 'react'
 import arrow from '../../assets/arrow.svg'
 
 function Bascule(props) {
-  const [open, setOPen] = useState(false)
+  const [open, setOpen] = useState(false)
 
   const toggle = () => {
-    setOPen(!open)
+    setOpen(!open)
   }
 
   return (

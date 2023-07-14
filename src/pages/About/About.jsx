@@ -1,14 +1,11 @@
 import './About.css';
 import image from '../../assets/fond-about.jpg';
 import Banner from '../../components/banner/Banner';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import Bascule from '../../components/bascule/Bascule'
 
 function About() {
   return (
     <>
-    <Header />
     <div className="container">
       <Banner image={image}/>
       <div className="about">
@@ -38,7 +35,6 @@ function About() {
         />
       </div>
     </div>
-      <Footer />
     </>
   );
 }
