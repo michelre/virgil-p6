@@ -1,14 +1,11 @@
-import logo from './logo.svg';
-import Tag from './components/tag/Tag.js';
-import Header from './components/header/Header';
-import Banner from './components/banner/Banner';
-import Gallery from './components/gallery/Gallery';
-import Footer from './components/footer/Footer';
-import './App.css';
+// import Tag from '../../components/tag/Tag';
+import Banner from '../../components/banner/Banner';
+import Gallery from '../../components/gallery/Gallery';
+import image from '../../assets/fond.jpg'
+import './Home.css';
 import {useEffect, useState} from "react";
-import Thumbnail from "./components/thumbnail/Thumbnail";
 
-function App() {
+function Home() {
 
     const [appartements, setAppartements] = useState([])
 
@@ -24,13 +21,14 @@ function App() {
     return (
         <div className="App">
             <div className='container'>
-                <Header />
-                <Banner />
+                <Banner
+                    image={image}
+                    imageTitre="Chez vous, partout et ailleurs"
+                />
                 <Gallery
                     appartements={appartements}
                 />
             </div>
-                <Footer />
 
             {/* 
             
@@ -53,4 +51,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;

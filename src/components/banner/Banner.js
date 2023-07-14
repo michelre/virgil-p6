@@ -1,9 +1,12 @@
 import './banner.css'
 
-export default function Banner() {
-	return (
-        <section className='banner'>
-            <p>Chez vous, partout et ailleurs</p>
-        </section>
-	)
+function Banner(props) {
+  return (
+    <div className="banner-component">
+      <img src={props.image} alt={props.alt} />
+      <h1> {props.imageTitre} </h1>
+    </div>
+  )
 }
+
+export default Banner
