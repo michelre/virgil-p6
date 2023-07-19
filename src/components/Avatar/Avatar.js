@@ -1,5 +1,8 @@
-const Avatar = () => {
-    return 'Avatar'
+import './avatar.css'
+
+const Avatar = (avatar) => {
+    return <div  className="avatar" style={{background: `url(${avatar.image}) center`}}>
+    </div>
 }
 
 export default Avatar;
