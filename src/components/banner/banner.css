@@ -22,3 +22,17 @@
     border-radius: 25px;
     filter: brightness(50%);
 }
+
+@media only screen and (max-width : 720px) {
+    .banner-component h1 {
+        left: 40%;
+        font-size: 24px;
+    }
+    .banner-component {
+        margin-block: 0;
+        width: 100%;
+    }
+    .banner-component img {
+        height: 111px;
+    }
+}

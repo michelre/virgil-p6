@@ -10,6 +10,7 @@ import {useParams, Navigate} from "react-router-dom";
 import Star from "../../components/star/Star";
 import Avatar from "../../components/Avatar/Avatar";
 import Bascule from "../../components/bascule/Bascule"
+import Carousel from '../../components/carousel/Carousel';
 
 function Appartments() {
 
@@ -36,62 +37,67 @@ function Appartments() {
 
     return appartement && (
         <>
-        <div className='appartement-info'>
-            <div className="appartement-header">
+        <div className='appartement-container'>
+          <div className='appartement-info'>
+              <div className="appartement-header">
+              <Carousel image={appartement.pictures} title={appartement.title} />
 
-            </div>
-            <div className='appartement-left'>
-                <div>
-                    <h1>{appartement.title}</h1>
-                    <p>{appartement.location}</p>
-                </div>
-                <div className="tag-container">
-                        {' '}
-                        {appartement.tags.map((tag, i) => {
-                          return (
-                            <span key={i} className="appartement-tag">
-                              {' '}
-                              {tag}{' '}
-                            </span>
-                          )
-                        })}{' '}
-                      </div>
+              </div>
+              <div className='appartement-left'>
+                  <div>
+                      <h1>{appartement.title}</h1>
+                      <p>{appartement.location}</p>
+                  </div>
+                  <div className="tag-container">
+                          {' '}
+                          {appartement.tags.map((tag, i) => {
+                            return (
+                              <span key={i} className="appartement-tag">
+                                {' '}
+                                {tag}{' '}
+                              </span>
+                            )
+                          })}{' '}
+                        </div>
 
 
-            </div>
-            <div className='appartement-right'>
-                <div className='appartement-host'>
-                        <span>{appartement.host.name}</span>
-                        <Avatar
-                            image={appartement.host.picture}/>
-                </div>
-                <div>
-                        <Star rating={parseInt(appartement.rating)} />
-                </div>
+              </div>
+              <div className='appartement-right'>
+                  <div className='appartement-host'>
+                          <span>{appartement.host.name}</span>
+                          <Avatar
+                              image={appartement.host.picture}/>
+                  </div>
+                  <div>
+                          <Star rating={parseInt(appartement.rating)} />
+                  </div>
 
-            </div>
+              </div>
+          </div>
+              <div className='appartement-bascule'>
+              <Bascule
+                      title="Description"
+                      content={appartement.description}
+                    />
+              <Bascule
+                      title="Équipements"
+                      content={
+                        <>
+                          {appartement.equipments.map((equipement, p) => {
+                            return (
+                              <span key={p}>
+                                {equipement} <br />
+                              </span>
+                            )
+                          //   Une autre façon pour faire ça ?
+                          })}
+                        </>
+                      }
+                    />
+              </div>
+
+
         </div>
-            <div className='appartement-bascule'>
-            <Bascule
-                    title="Description"
-                    content={appartement.description}
-                  />
-            <Bascule
-                    title="Équipements"
-                    content={
-                      <>
-                        {appartement.equipments.map((equipement, p) => {
-                          return (
-                            <span key={p}>
-                              {equipement} <br />
-                            </span>
-                          )
-                        //   Une autre façon pour faire ça ?
-                        })}
-                      </>
-                    }
-                  />
-            </div>
         </>
     );
 }
