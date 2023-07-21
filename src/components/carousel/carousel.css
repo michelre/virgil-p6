@@ -1,0 +1,55 @@
+.carousel  {
+    display: flex;
+    position: relative;
+    margin-block: 30px;
+}
+
+.carousel-img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.carousel img:nth-child(3) {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+}
+
+.carousel img:nth-child(4) {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+
+.carousel-arrow {
+    transform: rotate(90deg);
+    width: 50px;
+    height: 85px;
+    cursor: pointer;
+}
+
+.carousel span {
+    position: absolute;
+    color:white;
+    bottom: 60px;
+    left: 50%;
+    font-family: 'Montserrat';
+}
+
+@media only screen and (max-width : 870px) {
+    .carousel-img {
+        height: 335px;
+    }
+    .carousel {
+        margin: 20px;
+    }
+    .carousel img:nth-child(3) {
+        right: 40px;
+    }
+    .carousel img:nth-child(4) {
+        left: 40px;
+    }
+}

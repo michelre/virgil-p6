@@ -2,9 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 40px;
-    padding-inline: 100px;
-    padding: 50px 10% 0px 10%;
+    padding: 20px 10% 0 10%;
 }
 
 header nav a{
@@ -17,4 +15,22 @@ header nav a:first-child{
 
 .innactif {
     text-decoration: none;
+    font-size: 24px;
+}
+
+@media only screen and (max-width : 720px) {
+    header {
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    header img {
+        width: 145px;
+        height: 47px;
+    }
+    .innactif {
+        font-size: 12px;
+    }
+    header nav a:first-child{
+        margin-right: 20px;
+    }
 }
