@@ -2,7 +2,7 @@ import React from 'react';
 import Error from './pages/404/404'
 import About from './pages/About/About'
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import {
     createBrowserRouter,
     RouterProvider,

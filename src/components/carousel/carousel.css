@@ -1,30 +1,37 @@
-.carousel  {
-    display: flex;
-    position: relative;
+.carousel {
     margin-block: 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+}
+
+.carousel-container  {
+    display: flex;
+    transition: transform .5s linear;
+    border-radius: 25px;
 }
 
 .carousel-img {
     height: 415px;
     width: 100%;
     object-fit: cover;
-    border-radius: 25px;
+    flex-shrink: 0;
 }
 
-.carousel img:nth-child(3) {
+.arrow-right {
     position: absolute;
     top: 40%;
     right: 3%;
 }
 
-.carousel img:nth-child(4) {
+.arrow-left {
     transform: rotate(270deg);
     position: absolute;
     top: 40%;
     left: 3%;
 }
 
-.carousel-arrow {
+.carousel-arrow arrow-left {
     transform: rotate(90deg);
     width: 50px;
     height: 85px;

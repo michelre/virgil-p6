@@ -1,12 +1,6 @@
-import Tag from '../../components/tag/Tag';
-import Header from '../../components/header/Header';
-import Banner from '../../components/banner/Banner';
-import Gallery from '../../components/gallery/Gallery';
-import Footer from '../../components/footer/Footer';
 import './Appartments.css';
 import {useEffect, useState} from "react";
-import Thumbnail from "../../components/thumbnail/Thumbnail";
-import {useParams, Navigate} from "react-router-dom";
+import {Navigate, useParams} from "react-router-dom";
 import Star from "../../components/star/Star";
 import Avatar from "../../components/Avatar/Avatar";
 import Bascule from "../../components/bascule/Bascule"
@@ -29,7 +23,7 @@ function Appartments() {
                 }
                 setAppartement(app)
             })
-    }, [])
+    }, [params])
 
     if(error){
         return <Navigate to="/404" />
@@ -40,7 +34,7 @@ function Appartments() {
         <div className='appartement-container'>
           <div className='appartement-info'>
               <div className="appartement-header">
-              <Carousel image={appartement.pictures} title={appartement.title} />
+              <Carousel images={appartement.pictures} title={appartement.title} />
 
               </div>
               <div className='appartement-left'>
