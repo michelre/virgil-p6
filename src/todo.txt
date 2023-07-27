@@ -1,0 +1,5 @@
+1/ Mettre les tags dans le components tag
+2/ transition collapse
+3/ Menu Underline active
+4/ Changer hauteur banner responsive page about
+5/ Fixer footer mobile

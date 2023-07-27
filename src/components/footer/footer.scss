@@ -1,0 +1,20 @@
+.footer {
+	width: 100;
+	background-color: black;
+	padding: 50px;
+	margin-top: 50px;
+	text-align: center;
+	p {
+		color: white;
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width : 720px) {
+	.footer {
+		margin-top: 10px;
+		// position: absolute;
+		// bottom: 0;
+		// width: 100%;
+	}
+}

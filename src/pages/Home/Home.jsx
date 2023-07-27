@@ -2,7 +2,7 @@
 import Banner from '../../components/banner/Banner';
 import Gallery from '../../components/gallery/Gallery';
 import image from '../../assets/fond.jpg'
-import './Home.css';
+import './Home.scss';
 import {useEffect, useState} from "react";
 
 function Home() {

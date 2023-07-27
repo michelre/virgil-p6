@@ -1,4 +1,4 @@
-import './bascule.css'
+import './bascule.scss'
 import { useState } from 'react'
 import arrow from '../../assets/arrow.svg'
 

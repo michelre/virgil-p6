@@ -1,0 +1,72 @@
+$color_1: #FF6060;
+$color_2: white;
+$font-family_1: 'Montserrat';
+$background-color_1: #FF6060;
+
+.appartement-info {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	color: $color_1;
+}
+.appartement-container {
+	padding: 0px 5% 0px 5%;
+}
+.appartement-header {
+	width: 100%;
+}
+.appartement-host {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 142.6%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.appartement-tag {
+	color: $color_2;
+	background-color: $background-color_1;
+	padding-inline: 10px;
+	padding-block: 5px;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.tag-container {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 10px;
+}
+.appartement-bascule {
+	display: flex;
+	flex-direction: column;
+	gap: 5%;
+	margin-top: 30px;
+}
+.appartement-left {
+	h2 {
+		font-family: $font-family_1;
+		font-weight: 500;
+	}
+}
+@media screen and (min-width: 768px) {
+	.appartement-header {
+		grid-template-columns: 1fr 1fr;
+	}
+	.appartement-container {
+		padding: 0px 10% 0px 10%;
+	}
+	.appartement-tag {
+		padding-inline: 40px;
+	}
+	.appartement-left {
+		h2 {
+			font-size: 36px;
+			width: 80%;
+		}
+		width: 80%;
+	}
+	.appartement-bascule {
+		flex-direction: row;
+	}
+}
