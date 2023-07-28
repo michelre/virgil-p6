@@ -13,3 +13,10 @@
   background: #FF6060;
   margin-right: 4px;
 }
+
+@media only screen and (max-width : 720px) {
+	.container {
+    padding: 20px 5% 0 5%;
+
+	}
+}

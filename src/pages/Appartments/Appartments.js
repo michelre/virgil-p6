@@ -1,4 +1,4 @@
-import './Appartments.css';
+import './Appartments.scss';
 import {useEffect, useState} from "react";
 import {Navigate, useParams} from "react-router-dom";
 import Star from "../../components/star/Star";
@@ -39,7 +39,7 @@ function Appartments() {
               </div>
               <div className='appartement-left'>
                   <div>
-                      <h1>{appartement.title}</h1>
+                      <h2>{appartement.title}</h2>
                       <p>{appartement.location}</p>
                   </div>
                   <div className="tag-container">

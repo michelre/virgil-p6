@@ -1,4 +1,4 @@
-import './gallery.css'
+import './gallery.scss'
 import Thumbnail from "../thumbnail/Thumbnail";
 import {NavLink} from "react-router-dom";
 

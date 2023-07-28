@@ -1,4 +1,4 @@
-import './About.css';
+import './About.scss';
 import image from '../../assets/fond-about.jpg';
 import Banner from '../../components/banner/Banner';
 import Bascule from '../../components/bascule/Bascule'
@@ -7,7 +7,7 @@ function About() {
   return (
     <>
     <div className="container">
-      <Banner image={image}/>
+      <Banner image={image} alt="montagne"/>
       <div className="about">
         <Bascule
           title="Fiabilité"
