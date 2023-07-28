@@ -12,10 +12,16 @@ header {
 		}
 	}
 }
-.innactif {
+a {
 	text-decoration: none;
 	font-size: 24px;
 }
+
+
+.active {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width : 720px) {
 	header {
 		padding: 0px 5% 0 5%;

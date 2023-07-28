@@ -7,7 +7,7 @@ function About() {
   return (
     <>
     <div className="container">
-      <Banner image={image} alt="montagne"/>
+      <Banner image={image} alt="montagne" position={'about'}/>
       <div className="about">
         <Bascule
           title="Fiabilité"

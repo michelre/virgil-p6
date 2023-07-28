@@ -5,6 +5,7 @@ import Star from "../../components/star/Star";
 import Avatar from "../../components/Avatar/Avatar";
 import Bascule from "../../components/bascule/Bascule"
 import Carousel from '../../components/carousel/Carousel';
+import Tag from '../../components/tag/Tag'
 
 function Appartments() {
 
@@ -43,16 +44,8 @@ function Appartments() {
                       <p>{appartement.location}</p>
                   </div>
                   <div className="tag-container">
-                          {' '}
-                          {appartement.tags.map((tag, i) => {
-                            return (
-                              <span key={i} className="appartement-tag">
-                                {' '}
-                                {tag}{' '}
-                              </span>
-                            )
-                          })}{' '}
-                        </div>
+                    {appartement.tags.map((tag, i) => <Tag key={i} tag={tag} />)}
+                  </div>
 
 
               </div>

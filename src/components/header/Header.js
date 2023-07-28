@@ -10,13 +10,13 @@ export default function Header() {
 			</h1>
             <nav>
         <NavLink
-          className="innactif"
+          className=""
           to="/"
         >
           Accueil
         </NavLink>
         <NavLink
-          className="innactif"
+          className=""
           to="/about"
         >
           À propos
