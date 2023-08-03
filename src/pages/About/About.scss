@@ -1,5 +1,5 @@
-.container {
-    text-align: center;
+.container-about {
+    text-align: left;
     padding: 0px 10% 0px 10%;
 }
 
@@ -12,5 +12,18 @@
 @media screen and (max-width: 720px){
     .banniere-about{
         height: 600px;
+    }
+    .banner-component.about{
+        height:230px;
+        margin-bottom: 20px;
+    }
+    .banner-component.about>img{
+        height:100%;
+    }
+    .container-about{
+        padding: 20px 5% 0 5%;
+    }
+    .bascule-content{
+        font-size:20px;
     }
    }

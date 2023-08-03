@@ -23,15 +23,12 @@ $background-color_1: #FF6060;
 	align-items: center;
 	justify-content: flex-end;
 }
-.appartement-tag {
-	color: $color_2;
-	background-color: $background-color_1;
-	padding-inline: 10px;
-	padding-block: 5px;
-	border-radius: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
+
+.appartement-host span{
+	width: 25%;
+	text-align: right;
 }
+
 .tag-container {
 	display: flex;
 	flex-flow: row wrap;
@@ -49,6 +46,20 @@ $background-color_1: #FF6060;
 		font-weight: 500;
 	}
 }
+
+.appartement-right {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.star img{
+	width: 30px
+}
+
 @media screen and (min-width: 768px) {
 	.appartement-header {
 		grid-template-columns: 1fr 1fr;
@@ -68,5 +79,28 @@ $background-color_1: #FF6060;
 	}
 	.appartement-bascule {
 		flex-direction: row;
+	}
+	.appartement-right{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.appartement-block{
+		width: 100%;
+		display: flex;
+	}
+	.appartement-host span{
+		width: 10%;
+		text-align: right;
+		font-size: 25px;
+	}
+	.appartement-host{
+		width: 100%;
+	}
+	.star img{
+		width: 40px
+	}
+	.star{
+		width: 100%;
+		text-align: right;
 	}
 }
