@@ -38,6 +38,7 @@ function Appartments() {
               <Carousel images={appartement.pictures} title={appartement.title} />
 
               </div>
+            <div className='appartement-block'>
               <div className='appartement-left'>
                   <div>
                       <h2>{appartement.title}</h2>
@@ -55,11 +56,11 @@ function Appartments() {
                           <Avatar
                               image={appartement.host.picture}/>
                   </div>
-                  <div>
+                  <div className='star'>
                           <Star rating={parseInt(appartement.rating)} />
                   </div>
-
-              </div>
+                </div>
+            </div>
           </div>
               <div className='appartement-bascule'>
               <Bascule

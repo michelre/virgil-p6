@@ -6,7 +6,7 @@ import Bascule from '../../components/bascule/Bascule'
 function About() {
   return (
     <>
-    <div className="container">
+    <div className="container-about">
       <Banner image={image} alt="montagne" position={'about'}/>
       <div className="about">
         <Bascule

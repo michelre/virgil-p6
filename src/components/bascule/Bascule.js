@@ -26,11 +26,6 @@ function Bascule(props) {
             <div className={`bascule-content`} style={{height: open ? `${contentHeight}px` : 0}}>
                 <h4 ref={basculeContent}>{props.content}</h4>
             </div>
-            {/*open && (
-        <div className="open">
-          <h4>{props.content}</h4>
-        </div>
-      )*/}
         </div>
     )
 }

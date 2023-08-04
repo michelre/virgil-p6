@@ -1,71 +1,85 @@
 .bascule-elements {
-  button {
-    background: #FF6060;
-    border: none;
-    padding: 5px;
-    font-family: 'Montserrat';
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
+	button {
+	  background: #FF6060;
+	  border: none;
+	  padding: 5px;
+	  font-family: 'Montserrat';
+	  font-size: 24px;
+	  color: white;
+	  cursor: pointer;
+	}
+  
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+	width: 100%;
+	gap: 10%;
   }
-
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 100%;
-  gap: 10%;
-}
-
-.button-bar {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 10px;
-  padding-inline: 15px;
-  background: #FF6060;
-
-  img {
-    transition-duration: 0.5s;
-  }
-}
-
-.arrow.rotate {
-  transform: rotate(180deg);
-}
-
-
-.bascule-content {
-  background: #F7F7F7;
-  border-radius: 5px;
-  color: #FF6060;
-
-  h4 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 20px 30px;
-  }
-
-  transition: all .3s linear;
-  height: 0;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 0 30px;
-}
-
-@media only screen and (max-width: 720px) {
-  .bascule-elements button {
-    font-size: 16px;
-    margin-bottom: 0px;
-  }
+  
   .button-bar {
-    border-radius: 5px;
-    padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 10px;
+	padding-inline: 15px;
+	background: #FF6060;
+  
+	img {
+	  transition-duration: 0.5s;
+	  width: 30px;
+	}
   }
-  .bascule-elements {
-    margin-bottom: 25px;
+  
+  .arrow.rotate {
+	transform: rotate(180deg);
   }
-}
+  
+  
+  .bascule-content {
+	background: #F7F7F7;
+	border-radius: 5px;
+	color: #FF6060;
+  
+	h4 {
+	  margin: 0;
+	  font-size: 20px;
+	  font-weight: 300;
+	  padding: 20px 0px;
+	}
+  
+	transition: all .3s linear;
+	height: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 30px;
+  }
+  
+  @media only screen and (max-width: 720px) {
+	.bascule-elements button {
+	  font-size: 16px;
+	  margin-bottom: 0px;
+	}
+	.button-bar {
+	  border-radius: 5px;
+	  padding: 5px;
+	}
+	.button-bar img {
+		width: 5%;
+		padding-right: 10px;
+	}
+	.bascule-elements {
+	  margin-bottom: 25px;
+	}
+	.arrow.rotate{
+		margin-right: 10px;
+	}
+
+	.bascule-content h4{
+		font-size:16px;
+		text-align: left;
+		padding: 20px 0px;
+	}
+  }
