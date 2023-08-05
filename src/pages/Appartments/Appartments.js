@@ -52,9 +52,12 @@ function Appartments() {
               </div>
               <div className='appartement-right'>
                   <div className='appartement-host'>
-                          <span>{appartement.host.name}</span>
-                          <Avatar
-                              image={appartement.host.picture}/>
+                      <div>
+                          <div>{appartement.host.name.split(' ')[0]}</div>
+                          <div>{appartement.host.name.split(' ')[1]}</div>
+                      </div>
+                      <Avatar
+                          image={appartement.host.picture}/>
                   </div>
                   <div className='star'>
                           <Star rating={parseInt(appartement.rating)} />

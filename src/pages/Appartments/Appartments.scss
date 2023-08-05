@@ -4,103 +4,117 @@ $font-family_1: 'Montserrat';
 $background-color_1: #FF6060;
 
 .appartement-info {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	color: $color_1;
-}
-.appartement-container {
-	padding: 0px 5% 0px 5%;
-}
-.appartement-header {
-	width: 100%;
-}
-.appartement-host {
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 142.6%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: $color_1;
 }
 
-.appartement-host span{
-	width: 25%;
-	text-align: right;
+.appartement-container {
+  padding: 0px 5% 0px 5%;
+}
+
+.appartement-header {
+  width: 100%;
+}
+
+.appartement-host {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.appartement-host div {
+  text-align: right;
 }
 
 .tag-container {
-	display: flex;
-	flex-flow: row wrap;
-	margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
 }
+
 .appartement-bascule {
-	display: flex;
-	flex-direction: column;
-	gap: 5%;
-	margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin-top: 30px;
 }
+
 .appartement-left {
-	h2 {
-		font-family: $font-family_1;
-		font-weight: 500;
-	}
+  h2 {
+    font-family: $font-family_1;
+    font-weight: 500;
+  }
 }
 
 .appartement-right {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	padding-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
 }
 
-.star img{
-	width: 30px
+.star img {
+  width: 30px
+}
+
+.appartement-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
-	.appartement-header {
-		grid-template-columns: 1fr 1fr;
-	}
-	.appartement-container {
-		padding: 0px 10% 0px 10%;
-	}
-	.appartement-tag {
-		padding-inline: 40px;
-	}
-	.appartement-left {
-		h2 {
-			font-size: 36px;
-			width: 80%;
-		}
-		width: 80%;
-	}
-	.appartement-bascule {
-		flex-direction: row;
-	}
-	.appartement-right{
-		flex-direction: column;
-		justify-content: space-around;
-	}
-	.appartement-block{
-		width: 100%;
-		display: flex;
-	}
-	.appartement-host span{
-		width: 10%;
-		text-align: right;
-		font-size: 25px;
-	}
-	.appartement-host{
-		width: 100%;
-	}
-	.star img{
-		width: 40px
-	}
-	.star{
-		width: 100%;
-		text-align: right;
-	}
+  .appartement-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .appartement-container {
+    padding: 0px 10% 0px 10%;
+  }
+  .appartement-tag {
+    padding-inline: 40px;
+  }
+  .appartement-left {
+    h2 {
+      font-size: 36px;
+      width: 80%;
+    }
+
+    width: 80%;
+  }
+  .appartement-bascule {
+    flex-direction: row;
+  }
+  .appartement-right {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+  }
+
+  .appartement-block {
+
+    flex-wrap: nowrap;
+  }
+
+  .appartement-host div {
+    text-align: right;
+    font-size: 25px;
+  }
+  .appartement-host {
+    width: 100%;
+  }
+  .star img {
+    width: 40px
+  }
+  .star {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
 }
